@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLMs et emballement de la performativité</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/league.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal blockquote {
+            width: 90%;
+            font-size: 0.85em;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-left: 4px solid #42affa;
+        }
+        .reveal small { font-size: 0.5em; display: block; margin-top: 1em; }
+        .reveal table { font-size: 0.7em; margin: 0 auto; }
+        .reveal th, .reveal td { padding: 0.5em 1em; border: 1px solid #444; }
+        .reveal img { max-height: 500px; }
+        .reveal .notes { display: none; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1: Titre -->
+            <section>
+                <h2>LLMs et emballement de la performativité dans l'enseignement supérieur</h2>
+                <p><strong>Nathanaël Friant</strong></p>
+                <p>Université libre de Bruxelles</p>
+                <p><em>Pré-SETT - 28 Janvier 2026</em></p>
+            </section>
+
+            <!-- Slide 2 -->
+            <section>
+                <h3>Une communication différente</h3>
+                <ul>
+                    <li>Point de départ: vécu personnel</li>
+                    <li>Expérimentations avec les LLM</li>
+                    <li>Vécu de prof. depuis l'intérieur de l'université</li>
+                    <li>Sérendipité</li>
+                </ul>
+                <p><strong>Résultat: notes éparses, lecture et enregistrement d'une collection d'articles scientifiques et de billets de blogs, liens entre concepts</strong></p>
+            </section>
+
+            <!-- Slide 3 -->
+            <section>
+                <h3>Une solution pour en faire une présentation?</h3>
+                <img src="img/claude-code-1.png" alt="Claude Code screenshot 1">
+                <small>(Claude Code, modèle Opus 4.5)</small>
+            </section>
+
+            <!-- Slide 4 -->
+            <section>
+                <h3>Une solution pour en faire une présentation? (2)</h3>
+                <img src="img/claude-code-2.png" alt="Claude Code screenshot 2">
+                <small>(Claude Code, modèle Opus 4.5)</small>
+            </section>
+
+            <!-- Slide 5 -->
+            <section>
+                <p>Et franchement, j'aurais pu arrêter là ma préparation.</p>
+                <p>La présentation était très bien. Je connaissais les articles pour les avoir lus.</p>
+                <p>Mais cela aurait-il été correct?</p>
+            </section>
+
+            <!-- Slide 6 -->
+            <section>
+                <h3>Il y aurait pu avoir des erreurs</h3>
+                <img src="img/retracted-paper.png" alt="Retracted paper example" style="max-height: 400px;">
+                <small>
+                    Guo, X., Dong, L., & Hao, D. (2024). RETRACTED : Cellular functions of spermatogonial stem cells in relation to JAK/STAT signaling pathway. <em>Frontiers in Cell and Developmental Biology</em>, 11, 1339390. <a href="https://doi.org/10.3389/fcell.2023.1339390">https://doi.org/10.3389/fcell.2023.1339390</a>
+                </small>
+            </section>
+
+            <!-- Slide 7 -->
+            <section>
+                <h3>Pourquoi ai-je procédé de la sorte?</h3>
+                <p>Mon hypothèse est que, comme chargé de cours à l'université, les LLM m'offrent une échappatoire apparente à la tension créée par la <strong>performativité.</strong></p>
+                <p>Ils me permettent de performer. Mais ils peuvent m'empêcher d'être.</p>
+            </section>
+
+            <!-- Slide 8 -->
+            <section>
+                <h3>Le problème</h3>
+                <p>En me permettant cela, les LLMs s'insèrent dans une <strong>boucle de rétroaction</strong> qui intensifie collectivement ce qu'ils semblent résoudre individuellement.</p>
+            </section>
+
+            <!-- Slide 9 -->
+            <section>
+                <h2>Mon cadre théorique</h2>
+            </section>
+
+            <!-- Slide 10 -->
+            <section>
+                <h3>Des technologies culturelles et sociales</h3>
+                <blockquote>
+                    "Large models should not be viewed primarily as intelligent agents but as a new kind of cultural and social technology, allowing humans to take advantage of information other humans have accumulated." (p. 1153)
+                </blockquote>
+                <small>
+                    Farrell, H., Gopnik, A., Shalizi, C., & Evans, J. (2025). Large AI models are cultural and social technologies. <em>Science</em>, 387(6739), 1153-1156.
+                </small>
+            </section>
+
+            <!-- Slide 11 -->
+            <section>
+                <h3>Des technologies culturelles et sociales (2)</h3>
+                <blockquote>
+                    "But these systems do not merely summarize this information, like library catalogs, internet search, and Wikipedia. They also can reorganize and reconstruct representations or 'simulations' of this information at scale and in new ways, like markets, states, and bureaucracies." (p. 1154)
+                </blockquote>
+                <small>
+                    Farrell, H., Gopnik, A., Shalizi, C., & Evans, J. (2025). Large AI models are cultural and social technologies. <em>Science</em>, 387(6739), 1153-1156.
+                </small>
+            </section>
+
+            <!-- Slide 12 -->
+            <section>
+                <h3>Des représentations avec pertes</h3>
+                <p>"Lossy JPEGS"</p>
+                <table>
+                    <tr>
+                        <th>Technologie</th>
+                        <th>Ce qu'elle compresse</th>
+                        <th>Ce qu'elle perd</th>
+                    </tr>
+                    <tr>
+                        <td>Prix de marché</td>
+                        <td>Relations économiques complexes</td>
+                        <td>Externalités (ex: carbone)</td>
+                    </tr>
+                    <tr>
+                        <td>Statistiques gouvernementales</td>
+                        <td>Caractéristiques des populations</td>
+                        <td>Nuances, cas particuliers</td>
+                    </tr>
+                    <tr>
+                        <td>Catégories bureaucratiques</td>
+                        <td>Diversité sociale</td>
+                        <td>Singularités individuelles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LLM</strong></td>
+                        <td>Corpus textuels massifs</td>
+                        <td>Vérité, rareté, nouveauté</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Slide 13 -->
+            <section>
+                <h3>La performativité</h3>
+                <blockquote>
+                    "Performativity is a technology, a culture and a mode of regulation that employs judgements, comparisons and displays as means of incentive, control, attrition and change – based on rewards and sanctions (both material and symbolic)." (p. 216)
+                </blockquote>
+                <small>
+                    Ball, S. J. (2003). The teacher's soul and the terrors of performativity. <em>Journal of Education Policy</em>, 18(2), 215-228. <a href="https://doi.org/10.1080/0268093022000043065">https://doi.org/10.1080/0268093022000043065</a>
+                </small>
+            </section>
+
+            <!-- Slide 14 -->
+            <section>
+                <h3>Trois technologies néolibérales</h3>
+                <ol>
+                    <li><strong>Le marché</strong> : compétition, choix</li>
+                    <li><strong>Le management</strong> : contrôle organisationnel</li>
+                    <li><strong>La performance</strong> : mesure, comparaison</li>
+                </ol>
+            </section>
+
+            <!-- Slide 15 -->
+            <section>
+                <h3>L'effet sur les professionnels</h3>
+                <ul>
+                    <li>Transformation de ce qu'ils <em>font</em> et de ce qu'ils <strong><em>sont</em></strong></li>
+                    <li>Production de <strong>"fabrications"</strong></li>
+                    <li><strong>Insécurité ontologique</strong></li>
+                </ul>
+                <blockquote>
+                    "We become ontologically insecure: unsure whether we are doing enough, doing the right thing, doing as much as others, constantly looking to improve, to be better, to be excellent." (p. 220)
+                </blockquote>
+                <small>
+                    Ball, S. J. (2003). The teacher's soul and the terrors of performativity. <em>Journal of Education Policy</em>, 18(2), 215-228.
+                </small>
+                <aside class="notes">
+                    Si mon identité devient définie par mes outputs, alors je trouverai tous les moyens pour maximiser mes outputs. Les LLMs entrent parfaitement dans cette fonction.
+                </aside>
+            </section>
+
+            <!-- Slide 16 -->
+            <section>
+                <h3>On a donc notre contexte social</h3>
+                <ul>
+                    <li>Les LLMs sont des technologies sociales</li>
+                    <li>Qui s'insèrent dans un régime de performativité qui crée la demande pour des outils de production rapide.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 17 -->
+            <section>
+                <h3>Fabrications</h3>
+                <blockquote>
+                    "Fabrications are versions of an organization (or person) which does not exist – they are not 'outside the truth' but neither do they render simply true or direct accounts – they are produced purposefully in order 'to be accountable'." (p. 224)
+                </blockquote>
+                <small>
+                    Ball, S. J. (2003). The teacher's soul and the terrors of performativity. <em>Journal of Education Policy</em>, 18(2), 215-228.
+                </small>
+            </section>
+
+            <!-- Slide 18 -->
+            <section>
+                <h3>Les LLM et la science</h3>
+                <blockquote>
+                    "To ask about LLMs and science is to ask what program was already running when they arrived. The program, as it turns out, had been running for decades, and it was not optimized for epistemic depth."
+                </blockquote>
+                <small>
+                    Baker, K. (2025). Context Widows, or, of GPUs, LPUs, and Goal Displacement. <em>Artificial Bureaucracy</em> (Substack). <a href="https://artificialbureaucracy.substack.com/p/context-widows">https://artificialbureaucracy.substack.com/p/context-widows</a>
+                </small>
+                <aside class="notes">
+                    "LLMs didn't create the dysfunction in scientific publishing; they inherited it, intensified it, made it run faster."
+                    Les LLM ne sont pas des agents de rupture ("disruptors") mais des intensificateurs ("intensifiers") d'une logique de déplacement des objectifs qui opère depuis 60 ans dans le système scientifique.
+                </aside>
+            </section>
+
+            <!-- Slide 19 -->
+            <section>
+                <h3>Métriques de citations</h3>
+                <p>Comment gérer un système qui produit plus de littérature que quiconque peut lire?</p>
+                <blockquote>
+                    "The intention was to solve an information overload problem—to help researchers find the important work in a flood of publication. This was a reasonable response to a real problem. But solutions curdle."
+                </blockquote>
+            </section>
+
+            <!-- Slide 20 -->
+            <section>
+                <h3>Métriques de citations (2)</h3>
+                <blockquote>
+                    "The metrics flattened this distinction into a single function: citation as credit, as endorsement, as vote."
+                </blockquote>
+                <p>Déplacement des objectifs (Merton, 1940)</p>
+                <blockquote>
+                    "The measure becomes the target; the proxy becomes the prize."
+                </blockquote>
+                <small>
+                    Baker, K. (2025). Context Widows, or, of GPUs, LPUs, and Goal Displacement. <em>Artificial Bureaucracy</em> (Substack).
+                </small>
+            </section>
+
+            <!-- Slide 21 -->
+            <section>
+                <h3>L'arrivée des LLMs</h3>
+                <blockquote>
+                    "Into this context—a scientific system already optimized for measurable output, already decades into goal displacement, already reshaping research priorities around metrics rather than problems—arrive large language models."
+                </blockquote>
+                <small>
+                    Baker, K. (2025). Context Widows, or, of GPUs, LPUs, and Goal Displacement. <em>Artificial Bureaucracy</em> (Substack).
+                </small>
+            </section>
+
+            <!-- Slide 22 -->
+            <section>
+                <h2>Il existe des données empiriques</h2>
+                <p>Hao, Q., Xu, F., Li, Y., & Evans, J. (2026). Artificial intelligence tools expand scientists' impact but contract science's focus. <em>Nature</em>. <a href="https://doi.org/10.1038/s41586-025-09922-y">https://doi.org/10.1038/s41586-025-09922-y</a></p>
+                <p>41,3 millions d'articles (1980-2025)</p>
+            </section>
+
+            <!-- Slide 23 -->
+            <section>
+                <h3>Le paradoxe individuel/collectif</h3>
+                <table>
+                    <tr>
+                        <th>Niveau</th>
+                        <th>Effet de l'IA</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Individuel</strong></td>
+                        <td><strong>3 fois plus</strong> de publications, <strong>4,8 fois plus</strong> de citations, -1,37 ans pour devenir PI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Collectif</strong></td>
+                        <td>-4,63% étendue des connaissances, -22% engagement mutuel</td>
+                    </tr>
+                </table>
+                <small>
+                    Hao, Q., Xu, F., Li, Y., & Evans, J. (2026). Artificial intelligence tools expand scientists' impact but contract science's focus. <em>Nature</em>.
+                </small>
+            </section>
+
+            <!-- Slide 24 -->
+            <section>
+                <h3>Des sujets délaissés</h3>
+                <blockquote>
+                    "What are the topics that are most likely to be left behind from AI-augmented research across fields? Those with less available data include critical scientific questions regarding the origins of natural phenomena, where data are necessarily reduced."
+                </blockquote>
+                <blockquote>
+                    "This could shift collective attention away from new and original questions that lack the data required for AI to demonstrate benefit."
+                </blockquote>
+                <small>
+                    Hao, Q., Xu, F., Li, Y., & Evans, J. (2026). Artificial intelligence tools expand scientists' impact but contract science's focus. <em>Nature</em>.
+                </small>
+            </section>
+
+            <!-- Slide 25 -->
+            <section>
+                <h2>D'autres données empiriques</h2>
+                <p>Kusumegi, K., Yang, X., Ginsparg, P., de Vaan, M., Stuart, T., & Yin, Y. (2025). Scientific production in the era of large language models. <em>Science</em>, 386(6728), 1240-1243. <a href="https://doi.org/10.1126/science.adw3000">https://doi.org/10.1126/science.adw3000</a></p>
+            </section>
+
+            <!-- Slide 26 -->
+            <section>
+                <h3>D'autres données empiriques (2)</h3>
+                <blockquote>
+                    "The sharp contrast in quality assessments across the distribution of language complexity in the two groups—human-written and LLM-assisted manuscripts—confirms that complex LLM-generated language often disguises weak scientific contributions."
+                </blockquote>
+            </section>
+
+            <!-- Slide 27 -->
+            <section>
+                <h2>Quels liens avec l'enseignement?</h2>
+                <p>Molesworth, M., Scullion, R., & Nixon, E. (Eds.) (2011). <em>The Marketisation of Higher Education and the Student as Consumer</em>. London: Routledge.</p>
+                <p>Le versant étudiant de la performativité analysée par Ball chez les enseignants</p>
+            </section>
+
+            <!-- Slide 28 -->
+            <section>
+                <h3>L'étudiant comme consommateur</h3>
+                <blockquote>
+                    "Students seek to <em>have</em> a degree rather than to <em>be</em> learners." (Molesworth et al., 2009, p. 172)
+                </blockquote>
+                <blockquote>
+                    "Students have become well-tuned consumers, their wealth of experience in commercial markets has shaped much of the way they respond to their desires, to opportunity and to choices they face." (Molesworth et al., 2009, p. 233)
+                </blockquote>
+            </section>
+
+            <!-- Slide 29 -->
+            <section>
+                <h3>L'étudiant comme consommateur (2)</h3>
+                <blockquote>
+                    "Education should create citizens who set their own interests aside for the greater good and who are willing to offer their knowledge and minds in the service of others. This is the opposite to the neo-liberal perspective of students and citizens pursuing their own self-interest." (Nordensvärd, p. 166)
+                </blockquote>
+            </section>
+
+            <!-- Slide 30 -->
+            <section>
+                <h3>Un diplôme comme "ticket"</h3>
+                <p>Rendu plus accessible par l'utilisation des LLM</p>
+                <blockquote>
+                    "This presentation of HE as a 'ticket' creates the sense that in attending university, students are accessing (perhaps purchasing) the 'graduate premium' irrespective of the extent of their engagement with the learning process." (Williams, citant Mandelson, 2009, p. 171-172)
+                </blockquote>
+            </section>
+
+            <!-- Slide 31 -->
+            <section>
+                <h3>Cognitive offloading</h3>
+                <blockquote>
+                    "The balance here is ultimately between using AI as a true study aid in a way that facilitates meaningful learning, and using it to cognitively offload tasks in a way that hinders learning."
+                </blockquote>
+                <small>
+                    Veale, M., Black, I., Dsouza, M., Fisher, M., Ghaus, M., Gibbs, T., Lynskey, O., O'Cinneide, C., Scotford, E., Thomas, O., Trapova, A., & Trapp, K. (2025). Artificial Intelligence, Education and Assessment at UCL Laws: Current Thinking and Next Steps for the UK Legal Education Sector. <em>UCL Legal Studies Research Paper Series</em> 04/2025.
+                </small>
+            </section>
+
+            <!-- Slide 32 -->
+            <section>
+                <h3>Cognitive offloading (2)</h3>
+                <blockquote>
+                    "Learning is the result of human <strong>grappling with the parts of the world that resist us</strong>."
+                </blockquote>
+                <blockquote>
+                    "Education is, by necessity, <strong>inefficient</strong>."
+                </blockquote>
+                <small>
+                    Drimmer, S. et al. (2025). Four Frictions: or, How to Resist AI in Education. <em>Public Books</em>. <a href="https://www.publicbooks.org/four-frictions-or-how-to-resist-ai-in-education/">https://www.publicbooks.org/four-frictions-or-how-to-resist-ai-in-education/</a>
+                </small>
+            </section>
+
+            <!-- Slide 33 -->
+            <section>
+                <h2>Un "cas pratique"</h2>
+                <p>Jj. (2025). The Copilot Delusion. <em>deplet.ing</em>. <a href="https://deplet.ing/the-copilot-delusion/">https://deplet.ing/the-copilot-delusion/</a></p>
+                <ul>
+                    <li>Billet de blog</li>
+                    <li>Témoignage de praticien</li>
+                    <li>Un programmeur défendant son métier comme un art face à l'IA</li>
+                </ul>
+            </section>
+
+            <!-- Slide 34 -->
+            <section>
+                <h3>Being vs having</h3>
+                <blockquote>
+                    "I like to code. Not supervise. Not hover over a synthetic lobotomized chatbot like some drooling silicon intern... I want to build shit. Real shit. Weird shit. Systems that are <em>on fire</em> type shit."
+                </blockquote>
+                <blockquote>
+                    "There was once magic here. There was once <em>madness</em>. Kids would stay up all night on IRC with bloodshot eyes, trying to render a cube in OpenGL without segfaulting their future. They <em>cared</em>."
+                </blockquote>
+            </section>
+
+            <!-- Slide 35 -->
+            <section>
+                <h3>Contre le cognitive offloading</h3>
+                <blockquote>
+                    "You want real connection to code? You <em>earn</em> that. You dig in. You wrestle with segfaults at 3 in the morning. You pace your apartment muttering about pointer arithmetic... When you outsource the thinking, you outsource the learning."
+                </blockquote>
+                <blockquote>
+                    "You build taste by <em>doing</em>. By hurting. By shaving nanoseconds with surgical tools. By writing a routine on Monday, rewriting it Tuesday, and realizing Wednesday it still sucks."
+                </blockquote>
+            </section>
+
+            <!-- Slide 36 -->
+            <section>
+                <h3>Performativité vs qualité</h3>
+                <blockquote>
+                    "My boss corners me. 'Why aren't you pairing more with him? He types <em>twice</em> as fast as you.' Of course he does. So does a cat having a seizure on a mechanical keyboard. But that doesn't mean it should be writing production code."
+                </blockquote>
+                <blockquote>
+                    "50 million users have an extra 3 seconds of unnecessary lag in a day because you wanted to hit tab rather than write code? That's nearly <em>5 years</em> of cumulative wasted time."
+                </blockquote>
+            </section>
+
+            <!-- Slide 37 -->
+            <section>
+                <h3>Goal displacement</h3>
+                <blockquote>
+                    "The real horror isn't that AI will take our jobs. It's that it will entice people who never wanted the job to begin with. People who don't care for quality... Vampires with SaaS dreams and Web3 in their LinkedIn bio."
+                </blockquote>
+            </section>
+
+            <!-- Slide 38 -->
+            <section>
+                <h3>Goal displacement (2)</h3>
+                <blockquote>
+                    "And what's worse, we'll normalize this mediocrity. Cement it in tooling. Turn it into a best practice."
+                </blockquote>
+                <blockquote>
+                    "If that happens? If the last real programmers are drowned in a sea of button-clicking career-chasers - then I pity the smart outsider kids to come after me."
+                </blockquote>
+            </section>
+
+            <!-- Slide 39 -->
+            <section>
+                <h2>Des points positifs tout de même</h2>
+                <ul>
+                    <li>Tactiques de résistance et d'appropriation (de Certeau, cité par Agirdag, 2025)
+                        <ul>
+                            <li>Révéler les biais</li>
+                            <li>Comparer les modèles pour montrer que le savoir est situé</li>
+                            <li>Translanguaging: valoriser les répertoires multilingues des étudiants</li>
+                        </ul>
+                    </li>
+                    <li>Literacy: conscience critique des contextes sociaux, culturels et politico-économiques</li>
+                </ul>
+                <small>
+                    Agirdag, O. (2025). Beyond Prompt Engineering: Prompting (L)iteracy, Linguistic Capital, and Educational Inequality. <em>Educational Theory</em>. <a href="https://doi.org/10.1111/edth.70057">https://doi.org/10.1111/edth.70057</a>
+                </small>
+            </section>
+
+            <!-- Slide 40 -->
+            <section>
+                <h3>Des points positifs tout de même (2)</h3>
+                <blockquote>
+                    "By wiring together so many perspectives across text, audio, and images, large models may allow us to discover unprecedented connections between them for the benefit of science and society. These technologies have most commonly been trained to regurgitate routine information as helpful assistants. A more fundamental set of possibilities might open up if we deployed them as maps to explore formerly uncharted territory." (Farrell et al., 2025, p. 3)
+                </blockquote>
+            </section>
+
+            <!-- Slide 41 -->
+            <section>
+                <h2>Au début de recherches fascinantes</h2>
+                <blockquote>
+                    "Will large models lead to greater cultural homogeneity or greater fragmentation? Will they reinforce or undermine the social institutions of human discovery? As they reshape the political economy, who will win and lose?"
+                </blockquote>
+                <blockquote>
+                    "Can large models be developed to enhance human creativity rather than to dull it? Finding practical answers to such questions will require an understanding of social science as well as engineering. Shifting the debate about AI away from agents and toward cultural and social technologies is a crucial first step toward building that cross-disciplinary understanding (15)" (Farrell et al., 2025, p. 4)
+                </blockquote>
+            </section>
+
+            <!-- Slide 42 -->
+            <section>
+                <h2>Modeste proposition</h2>
+                <p>Etudier en contexte la "prompting (l)iteracy" d'enseignants universitaires.</p>
+                <table style="font-size: 0.6em;">
+                    <tr>
+                        <th>Phase</th>
+                        <th>Méthode</th>
+                        <th>Données collectées</th>
+                    </tr>
+                    <tr>
+                        <td><strong>0. Recrutement</strong></td>
+                        <td>Questionnaire en ligne</td>
+                        <td>Profil sociolinguistique, usages déclarés, consentement éclairé</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1. Session observée</strong></td>
+                        <td>Observation filmée en labo + think-aloud</td>
+                        <td>Vidéo de l'écran + vidéo du participant + verbalisation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Export des traces</strong></td>
+                        <td>API Microsoft Copilot (via IT)</td>
+                        <td>Logs de la session : prompts, réponses, métadonnées</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Débrief filmé</strong></td>
+                        <td>Entretien semi-directif post-session</td>
+                        <td>Vidéo de l'entretien, réflexivité stimulée par extraits</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Slide 43 -->
+            <section>
+                <h1>Merci pour votre attention</h1>
+                <p><strong>Nathanaël Friant</strong></p>
+                <p>Université libre de Bruxelles</p>
+            </section>
+
+            <!-- Slide 44 -->
+            <section>
+                <h2>Note sur l'utilisation de LLMs</h2>
+                <p>Claude Opus 4.5 a été utilisé pour m'aider à articuler les sources éparses collectées à l'argument développé dans ma proposition de communication en créant des fiches synthétisant chacune de ces sources et explicitant le lien avec mes arguments.</p>
+                <p>Une première présentation suite aux prompts présentés en slides 3 et 4 a été entièrement créée par Claude. Elle disponible à l'adresse - <a href="https://nathfriant.github.io/lIm-performativite/">https://nathfriant.github.io/lIm-performativite/</a></p>
+                <p>J'ai entièrement recréé une nouvelle présentation: celle-ci.</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            center: true
+        });
+    </script>
+</body>
+</html>
